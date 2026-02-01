@@ -1,6 +1,15 @@
-sms-tools
+sms-tools-coursera-compatible
 ========= 
 
+This is a fork of the sms-tools repo at a revision that works for the coursera course Audio Signal Processing for Music Applications.
+
+Fixes so far:
+1) Updated the numpy core path for compiling the utilFunctions_C so that they compile with the commands below (you may also need to set up other compilation tools on windows)
+2) Updated the pip install to include the reqests library which is required to submit the assignements
+
+A lot of the instructions are still outdated so unfortunately, it looks like this class probably requires a very strong understanding of python (especially going from 2 -> 3) and troubleshooting.
+
+=========
 
 Sound analysis/synthesis tools for music applications written in python (with a bit of C) plus complementary teaching materials.
 
@@ -13,9 +22,9 @@ In Ubuntu you can install these modules by typing in the Terminal:
 
 <code>$ sudo apt-get install python-dev ipython python-numpy python-matplotlib python-scipy cython</code>
 
-In OSX you can install these modules by typing in the Terminal:
+In OSX/Windows you can install these modules by typing in the Terminal:
 
-<code>$ pip install ipython numpy matplotlib scipy cython</code>
+<code>$ pip install ipython numpy matplotlib scipy cython requests</code>
 
 then, to use the tools, after downloading the whole package, you need to compile some C functions. For that you should go to the directory <code>software/models/utilFunctions_C</code> and type:</p>
 
