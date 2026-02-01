@@ -24,7 +24,7 @@ else:
 py_inc = [get_python_inc()]
 
 np_lib = os.path.dirname(numpy.__file__)
-np_inc = [os.path.join(np_lib, 'core/include')]
+np_inc = [os.path.join(np_lib, '_core/include')]
 ext_inc = os
 
 sourcefiles = ["utilFunctions.c", "cutilFunctions.pyx"]
